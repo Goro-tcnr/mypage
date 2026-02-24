@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>練習01. 使用CSS語法配置版面</title>
+    <link rel="stylesheet" href="css/mycss01.css">
+    <style>
+        body {
+            background-color: var(--graffiti-concrete-ash);
+        }
+
+        .wrapper {
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1024px;
+        }
+
+        .wrapper .banner img {
+            /* 寬度 */
+            width: 100%;
+        }
+
+        nav {
+            background-color: var(--graffiti-dried-blood);
+            text-align: center;
+        }
+
+        nav ul {
+            display: inline-block;
+        }
+
+        nav ul li {
+            float: left;
+            list-style-type: none;
+        }
+
+        nav ul li a {
+            display: block;
+            background-color: var(--graffiti-brick-dust);
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-decoration: none;
+            color: var(--graffiti-concrete-ash);
+            font-size: 20px;
+            margin-right: 10px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px 2px var(--graffiti-basement-shadow);
+        }
+
+        nav ul li a:hover {
+            background-color: var(--graffiti-burnt-ochre);
+            box-shadow: 2px 2px 2px 2px var(--graffiti-steel-mist);
+        }
+
+        .content {
+            background-color: var(--graffiti-acid-yellow);
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 50px;
+            padding-right: 50px;
+            text-align: center;
+        }
+
+        .content h1 {
+            color: var(--graffiti-dried-blood);
+        }
+
+        .content p {
+            font-size: 20px
+        }
+
+        .content a {
+            display: block;
+            width: 150px;
+            height: 50px;
+            background-color: var(--graffiti-brick-dust);
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: auto;
+            margin-right: auto;
+            text-decoration: none;
+            font-size: 20px;
+            line-height: 50px;
+            color: var(--graffiti-concrete-ash);
+        }
+
+        .content a:hover {
+            background-color: var(--graffiti-burnt-ochre);
+        }
+
+        @media screen and (max-width: 1024px) {
+            .wrapper {
+                width: 100%;
+            }
+
+            nav ul {
+                display: block;
+            }
+
+            nav ul li {
+                width: 100%;
+            }
+
+            .content p {
+                font-size: 20px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="banner">
+            <img src="images.jpg" alt="">
+            <!-- 選單 -->
+            <nav>
+                <ul>
+                    <li><a href="" class="fw-900">首頁</a></li>
+                    <li><a href="" class="fw-900">最新消息</a></li>
+                    <li><a href="" class="fw-900">合作店家</a></li>
+                    <li><a href="" class="fw-900">關於我們</a></li>
+                    <li><a href="" class="fw-900">聯絡我們</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <b><div class="title-01" style="font-size: 32px;">專輯介紹</div></b>
+            <p class="fw-700">三十而立，生命課題隨時間滴答浮現，爸媽已不如兒時記憶中強壯，甚至偏離認知中的「大人」模樣，這才意識到，長出堅定的責任心，才算真的「長大」。</p>
+            <p class="fw-700">時間「滴答」片刻不停，挟著回憶刻下成長軌跡；對親人的誤解與理解，在一次次眼淚「滴答」流下後和解；以具象的「滴答」雨滴延伸，溶解了情感化作詞曲，匯聚成《滴滴答答》故事專輯。</p>
+            <p class="fw-500">《滴滴答答》由王彙筑與清醒夢主唱、同時為守夜人吉他手的蔡佳穎，共同擔綱專輯製作統籌。彙筑在最初創作Demo時，對專輯音樂內容安排，已有著明確的設定，除了與配樂經驗豐富的佳穎一同發揮想像力與執行力，兩人亦針對各類風格，安排與特定製作人激盪合作，如曹雅雯、Everydaze、2-CHI、高真、莊鈞智，淬鍊更加多元豐富的專輯樣貌。</p>
+            <p class="fw-900">每首歌在不同的人生段落與時間軸上，份量輕重有別：〈為了不讓媽媽傷心〉、〈虎豹母〉是微叛逆的芽苗；〈高麗菜粥〉、〈你沓沓仔講 我斟酌聽〉是層層疊疊後終將消逝的回憶；時間如常走著，不曉得該〈對佗位去〉，只知道心中一直有個抹滅不掉的〈16-3〉家的地址；雨水沖不掉，時間洪流也帶不走〈Drippling〉、〈愛著較慘死〉中，對人生各種成份的愛的偏執；終有一日，這份愛會帶著我們刻下〈Mom’s Tattoo〉，拋下悲傷〈輕輕仔飛〉。</p>
+            <b><div class="title-01" style="font-size: 32px;">關於王彙筑</div></b>
+            <p class="fw-700">王彙筑，出身嘉義的獨立唱作人，擅長彈唱創作、編曲，以一把吉他營造氛圍，一副真誠而柔美的獨特嗓音，撥動聽眾最深沉的情感，也能用Loop編制現豐富一人大樂隊。音樂類型以Folk與Indie Pop為主，歌詞風格時而隱晦、時而趣味，當你以為她是一個不折不扣的文青時，便會猝不及防來則冷笑話回擊。</p>
+            <p class="fw-500">嘉女吉他社出身，積累了大大小小的現場彈唱經驗，大學時期則獨自背著吉他征戰各大音樂創作比賽。2012年以演唱電影《女朋友。男朋友》插曲〈越美麗越危險〉出道，2014年發行個人首張創作專輯《少女維拉》，即入圍第26屆金曲最佳新人獎。</p>
+            <p class="fw-900">2020年以獨立音樂人身份，完成了最接近自己模樣的EP《Dear Sappy》，入圍新加坡第14屆Freshmusic Awards年度最佳EP的肯定。2021年發行個人第二張創作專輯《FAC:E》，不僅入圍第15屆Freshmusic Awards年度十大專輯、最佳女演唱人、年度大躍進三項獎項，更獲第33屆金曲獎最佳專輯製作人獎提名。</p>
+            <p class="fw-700">2022 年，彙筑邁入出道十週年，10月首次於Legacy Taipei舉辦個人大型專場演出，並參演 Streevoice 大團誕生，入圍最終人氣四強。2024年，經歷了「原創流行音樂大獎」、「南面而歌」等比賽後，再次蓄積創作能量，撿拾而立後的人生題材，以母語為創作媒介，發表個人首張臺語創作專輯《滴滴答答》。</p>
+            <p class="fw-500">2024年底推出首張全台語創作專輯《滴滴答答》，入圍第36屆金曲獎四項大獎，包括最佳台語女歌手、年度專輯、最佳台語專輯，以及〈高麗菜粥〉入圍最佳作曲人獎。此外，《滴滴答答》專輯於第18屆Freshmusic Awards獲頒年度十大專輯獎，〈高麗菜粥〉亦獲選為年度十大單曲。</p>
+            
+            
+            <a href="">了解更多</a>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>
