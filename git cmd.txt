@@ -1,0 +1,12 @@
+cd user\Desktop\1111\mypage
+
+git init
+
+git status
+
+git add .
+
+git commit -m "平時練習"
+
+git push
+

@@ -1,0 +1,229 @@
+C:\Users\user>git status
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\user>git add
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\user>git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+C:\Users\user>git commit-m "平時練習"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+C:\Users\user>git push
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\user>git commit-m "平時練習"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+C:\Users\user>git push
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\user>git commit-m "平時練習"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+C:\Users\user>git push
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\user>cd
+C:\Users\user
+
+C:\Users\user>cd.
+
+C:\Users\user>cd..
+
+C:\Users>git push
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users>git init
+C:/Users/.git: Permission denied
+
+C:\Users>cd_C:\Users\user\Desktop\平時練習
+檔案名稱、目錄名稱或磁碟區標籤語法錯誤。
+
+C:\Users>cd_C:\Users\user\Desktop\1111
+檔案名稱、目錄名稱或磁碟區標籤語法錯誤。
+
+C:\Users>cd_user\Desktop\1111
+系統找不到指定的路徑。
+
+C:\Users>cd user\Desktop\1111
+
+C:\Users\user\Desktop\1111>git status
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\user\Desktop\1111>git init
+Initialized empty Git repository in C:/Users/user/Desktop/1111/.git/
+
+C:\Users\user\Desktop\1111>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        images.jpg
+        "\345\271\263\346\231\202\347\267\264\347\277\222.html"
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\user\Desktop\1111>git add .
+
+C:\Users\user\Desktop\1111>git commit -m "平時練習"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'user@PC28.(none)')
+
+C:\Users\user\Desktop\1111>git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+C:\Users\user\Desktop\1111>git config --global user.email "0910428084.tcnr@gmail.com"
+
+C:\Users\user\Desktop\1111>git config --global user.name "Goro-tcnr"
+
+C:\Users\user\Desktop\1111>git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+C:\Users\user\Desktop\1111>git clone https://github.com/Goro-tcnr/mypage.git
+Cloning into 'mypage'...
+warning: You appear to have cloned an empty repository.
+
+C:\Users\user\Desktop\1111>cd mypage
+
+C:\Users\user\Desktop\1111\mypage>git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        images.jpg
+        "\345\271\263\346\231\202\347\267\264\347\277\222.html"
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\user\Desktop\1111\mypage>git add .
+
+C:\Users\user\Desktop\1111\mypage>git commit -m "平時練習"
+[main (root-commit) 0039d9b] 平時練習
+ 2 files changed, 152 insertions(+)
+ create mode 100644 images.jpg
+ create mode 100644 "\345\271\263\346\231\202\347\267\264\347\277\222.html"
+
+C:\Users\user\Desktop\1111\mypage>git push
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 37.62 KiB | 37.63 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Goro-tcnr/mypage.git
+ * [new branch]      main -> main
+
+C:\Users\user\Desktop\1111\mypage>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    "\345\271\263\346\231\202\347\267\264\347\277\222.html"
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\user\Desktop\1111\mypage>git add .
+
+C:\Users\user\Desktop\1111\mypage>git commit -m "平時練習"
+[main aadf427] 平時練習
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename "\345\271\263\346\231\202\347\267\264\347\277\222.html" => index.html (100%)
+
+C:\Users\user\Desktop\1111\mypage>git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 286 bytes | 286.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Goro-tcnr/mypage.git
+   0039d9b..aadf427  main -> main
+
+C:\Users\user\Desktop\1111\mypage>git add .
+
+C:\Users\user\Desktop\1111\mypage>git commit -m "平時練習"
+[main e39596e] 平時練習
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 "wiki\344\277\256\346\224\271.jpg"
+
+C:\Users\user\Desktop\1111\mypage>git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 184.95 KiB | 36.99 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Goro-tcnr/mypage.git
+   aadf427..e39596e  main -> main
+
+C:\Users\user\Desktop\1111\mypage>git add .
+
+C:\Users\user\Desktop\1111\mypage>git commit -m "平時練習"
+[main 5820b0d] 平時練習
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename "wiki\344\277\256\346\224\271.jpg" => wiki.jpg (100%)
+
+C:\Users\user\Desktop\1111\mypage>git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 238 bytes | 238.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Goro-tcnr/mypage.git
+   e39596e..5820b0d  main -> main
+
+C:\Users\user\Desktop\1111\mypage>
